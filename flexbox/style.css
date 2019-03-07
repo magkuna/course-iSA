@@ -1,0 +1,14 @@
+body{
+    background: salmon;
+}
+
+.flex-container{
+display: flex;
+width: 800px;
+margin: 0 auto;
+flex-direction:column;
+}
+
+.flex-container div{
+border: 1px solid black;
+}
