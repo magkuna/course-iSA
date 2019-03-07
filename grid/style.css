@@ -8,24 +8,32 @@ body{
     grid-template-columns:  auto auto auto;
     grid-row-gap: 50px;
     grid-column-gap:50px; 
+    background:white;
 
 
 }
 
 .grid-item{
-  border: 3px solid yellow;
+  border: 2px solid yellow;
   text-align: center;
   color: darkgreen;
+  background: lightcoral;  
   
-
+  
 }
 
 .item-1{
     grid-row-start:1;
     grid-row-end: 3;
+    text-align:center;
 }
 
 .item-4{
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+
+.item-9{
     grid-column-start:2;
     grid-column-end: 4;
 }
