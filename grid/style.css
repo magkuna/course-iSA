@@ -1,0 +1,8 @@
+body{
+    background: lightcoral;
+}
+
+.grid-container {
+    display: inline-grid;
+
+}
