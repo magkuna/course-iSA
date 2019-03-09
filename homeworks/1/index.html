@@ -32,10 +32,11 @@
     .hero {
         height: 50px;
         text-align: center;
-        padding: 20px;
+        padding:10px;
+      
     }
 
-    .title {
+    .title, .title1, .title2, .title3 {
         text-align: center;
         margin: 20px;
     }
@@ -56,21 +57,25 @@
 
     img {
         max-width: 20%;
-        margin:0 auto;
-        display:block;
-      
+        margin: 0 auto;
+        display: block;
+
     }
+
     .knowledge-info__wrapper {
         display: flex;
-        height: 550px;
+        height: 200px;
         flex-direction: row;
+        justify-content: space-between;
     }
     .knowledge-info {
         text-align: justify;
+        flex-basis: 33%;
+        padding: 50px;
     }
-    img{
-        margin:0 auto;
-    display:block;
+    .nav-container{
+        text-align: center;
+        text-decoration:none;
     }
 </style>
 
@@ -80,10 +85,19 @@
 <body background="images/tło2.jpg">
     <main class="main">
         <section class="hero">
-            <h1>Welcome on my website!</h1>
+            <h1>Trochę o mnie... i o programowaniu...</h1>
         </section>
-        <div class="title">
-            <h2>Trochę słów o mnie</h2>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-container">
+                    <a class="menu" href="#hero">HERO</a>
+                    <a class="menu" href="#title1">O mnie</a>
+                    <a class="menu" href="#title3">Nauka</a>
+                </ul>
+            </nav>
+        </header>
+        <div class="title1">
+            <h2>Kilka słów wprowadzenia</h2>
         </div>
         <section class="about">
             <p><img src="favicon/android-chrome-192x192.png" alt="ja" class="align-right medium" />Nazywam się Magda.
@@ -95,13 +109,13 @@
                 Pamiętaj! Nie ważne jak zaczynasz, ale ważne jak kończysz!!!
             </p>
         </section>
-        <div class="title">
+        <div class="title2">
             <h2>Technologie, których się obecnie uczę</h2>
         </div>
         <section class="knowledge">
             <div class="knowledge-info__wrapper">
                 <div class="knowledge-info">
-                        <img src="images/768px-HTML5_logo_and_wordmark.svg.png" alt="git">
+                    <img src="images/768px-HTML5_logo_and_wordmark.svg.png" alt="git">
                     <div class="title">
                         <h3>HTML</h3>
                     </div>
@@ -112,32 +126,32 @@
                     </p>
                 </div>
                 <div class="knowledge-info">
-                        <img src="images/3c2aadf4b1aeffa2bc631eb2037a2496.jpg" alt="git">
+                    <img src="images/3c2aadf4b1aeffa2bc631eb2037a2496.jpg" alt="git">
                     <div class="title">
                         <h3>CSS</h3>
                     </div>
                     <div class="desc">
-                        <div class="desc">
-                            <p>język służący do opisu formy prezentacji (wyświetlania) stron WWW.
-                                CSS został opracowany przez organizację W3C w 1996 r. jako potomek
-                                języka DSSSL przeznaczony do używania w połączeniu z SGML-em.
-                                Pierwszy szkic CSS zaproponował w 1994 r. Håkon Wium Lie.</p>
-                        </div>
+                        <p>Język służący do opisu formy prezentacji (wyświetlania) stron WWW.
+                            CSS został opracowany przez organizację W3C w 1996 r. jako potomek
+                            języka DSSSL przeznaczony do używania w połączeniu z SGML-em.
+                            Pierwszy szkic CSS zaproponował w 1994 r. Håkon Wium Lie.</p>
                     </div>
-                    <div class="knowledge-info">
-                            <img src="images/c619df96a5b24d8b45d923cc19bb82b4.jpeg" alt="git">
-                        <div class="title">
-                            <h3>GIT</h3>
-                        </div>
-                        <div class="desc">
-                            <p>rozproszony system kontroli wersji. Stworzył go Linus Torvalds
-                                jako narzędzie wspomagające rozwój jądra Linux. Git stanowi
-                                wolne oprogramowanie i został opublikowany na licencji GNU GPL
-                                w wersji 2.
-                            </p>
-                        </div>
+
+                </div>
+                <div class="knowledge-info">
+                    <img src="images/c619df96a5b24d8b45d923cc19bb82b4.jpeg" alt="git">
+                    <div class="title">
+                        <h3>GIT</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Rozproszony system kontroli wersji. Stworzył go Linus Torvalds
+                            jako narzędzie wspomagające rozwój jądra Linux. Git stanowi
+                            wolne oprogramowanie i został opublikowany na licencji GNU GPL
+                            w wersji 2.
+                        </p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
